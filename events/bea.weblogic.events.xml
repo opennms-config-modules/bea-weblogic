@@ -1,4 +1,4 @@
-<events xmlns="http://xmlns.opennms.org/xsd/eventconf">
+<events xmlns="https://xmlns.opennms.org/xsd/eventconf">
     <event>
         <mask>
             <maskelement>
@@ -20,7 +20,8 @@
             at the following time: %parm[#1]%
         </descr>
         <logmsg dest='logndisplay'>&lt;p&gt;BEA Event: Server Startup. Server: %parm[#2]% Time:
-            %parm[#1]%.&lt;/p&gt;</logmsg>
+            %parm[#1]%.&lt;/p&gt;
+        </logmsg>
         <severity>Warning</severity>
     </event>
 
@@ -45,7 +46,8 @@
             at the following time: %parm[#1]%
         </descr>
         <logmsg dest='logndisplay'>&lt;p&gt;BEA Event: Server Shutdown. Server: %parm[#2]% Time:
-            %parm[#1]%.&lt;/p&gt;</logmsg>
+            %parm[#1]%.&lt;/p&gt;
+        </logmsg>
         <severity>Warning</severity>
     </event>
 
@@ -78,7 +80,8 @@
             &lt;br&gt;Attribute Type: %parm[#9]%
         </descr>
         <logmsg dest='logndisplay'>&lt;p&gt;BEA Event: Attribute Change on %parm[#2]%: &lt;br&gt; %parm[#7]%.%parm[#8]%
-            changed to %parm[#4]% &lt;/p&gt;</logmsg>
+            changed to %parm[#4]% &lt;/p&gt;
+        </logmsg>
         <severity>Minor</severity>
     </event>
 
@@ -110,7 +113,8 @@
             &lt;br&gt;Attribute Name: %parm[#8]%
         </descr>
         <logmsg dest='logndisplay'>&lt;p&gt;BEA Event: A %parm[#3]% Monitor Trap has been triggered on %parm[#2]%.&lt;br&gt;MBean
-            Type: %parm[#6]% Attribute Name: %parm[#8]%&lt;/p&gt;</logmsg>
+            Type: %parm[#6]% Attribute Name: %parm[#8]%&lt;/p&gt;
+        </logmsg>
         <severity>Minor</severity>
     </event>
 
